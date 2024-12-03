@@ -1,6 +1,13 @@
-# Ledtape
+# LedTape
 
-Quero que seja feito em cenas, cada instancia de ledtape gerencia uma tupla de pinos
-Quero que cada ledtape tenha uma ação Blink pra iniciar a cena.
-Quero que o Blink precise de uma configuração validadora, possivelmente uma instancia de Scene que vai gerenciar como cada cena vai funcionar.
-A Scene receberá como parametro a tupla que representa o inicio e o fim do led, e um algoritmo que vai lidar com essa tupla
+Compatível com:
+1- Fita Led WS2812
+2- Raspberry Pi Pico 2
+
+A classe Ledtape é responsável por criar a referencia da fita led, logo, ela precisa receber uma tupla com todos os pixels da fita.
+
+Cada scene recebe uma tupla de pixel de inicio e de fim.
+
+Scenes tambem dependem de um algoritmo pra tratar os pixels associados a mesma.
+
+Ledtape tem um método blink que recebe uma instancia de Scene
